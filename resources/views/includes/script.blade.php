@@ -1,34 +1,40 @@
 <!-- jQuery -->
-<script src="{{asset ('public/dashboard/plugins/jquery/jquery.min.js')}}"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="{{asset ('public/dashboard/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button)
-</script>
-<!-- Bootstrap 4 -->
-<script src="{{asset ('public/dashboard/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<!-- ChartJS -->
-<script src="{{asset ('public/dashboard/plugins/chart.js/Chart.min.js')}}"></script>
-<!-- Sparkline -->
-<script src="{{asset ('public/dashboard/plugins/sparklines/sparkline.js')}}"></script>
+<script src="{{asset ('public/dashboard/vendors/jquery/dist/jquery.min.js')}}"></script>
+<!-- Bootstrap -->
+<script src="{{asset ('public/dashboard/vendors/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+<!-- FastClick -->
+<script src="{{asset ('public/dashboard/vendors/fastclick/lib/fastclick.js')}}"></script>
+<!-- NProgress -->
+<script src=" {{asset ('public/dashboard/vendors/nprogress/nprogress.js')}}"></script>
+<!-- Chart.js -->
+<script src="{{asset ('public/dashboard/vendors/Chart.js/dist/Chart.min.js')}}"></script>
+<!-- gauge.js -->
+<script src="{{asset ('public/dashboard/vendors/gauge.js/dist/gauge.min.js')}}"></script>
+<!-- bootstrap-progressbar -->
+<script src=" {{asset ('public/dashboard/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js')}}"></script>
+<!-- iCheck -->
+<script src=" {{asset ('public/dashboard/vendors/iCheck/icheck.min.js')}}"></script>
+<!-- Skycons -->
+<script src="{{asset ('public/dashboard/vendors/skycons/skycons.js')}}"></script>
+<!-- Flot -->
+<script src="{{asset ('public/dashboard/vendors/Flot/jquery.flot.js')}}"></script>
+<script src="{{asset ('public/dashboard/vendors/Flot/jquery.flot.pie.js')}}"></script>
+<script src="{{asset ('public/dashboard/vendors/Flot/jquery.flot.time.js')}}"></script>
+<script src="{{asset ('public/dashboard/vendors/Flot/jquery.flot.stack.js')}}"></script>
+<script src="{{asset ('public/dashboard/vendors/Flot/jquery.flot.resize.js')}}"></script>
+<!-- Flot plugins -->
+<script src="{{asset ('public/dashboard/vendors/flot.orderbars/js/jquery.flot.orderBars.js')}}"></script>
+<script src="{{asset ('public/dashboard/vendors/flot-spline/js/jquery.flot.spline.min.js')}}"></script>
+<script src="{{asset ('public/dashboard/vendors/flot.curvedlines/curvedLines.js')}}"></script>
+<!-- DateJS -->
+<script src="{{asset ('public/dashboard/vendors/DateJS/build/date.js')}}"></script>
 <!-- JQVMap -->
-<script src="{{asset ('public/dashboard/plugins/jqvmap/jquery.vmap.min.js')}}"></script>
-<script src="{{asset ('public/plugins/jqvmap/maps/jquery.vmap.usa.js')}}"></script>
-<!-- jQuery Knob Chart -->
-<script src="{{asset('public/dashboard/plugins/jquery-knob/jquery.knob.min.js')}}"></script>
-<!-- daterangepicker -->
-<script src="{{asset ('public/dashboard/plugins/moment/moment.min.js')}}"></script>
-<script src="{{asset ('public/dashboard/plugins/daterangepicker/daterangepicker.js')}}"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="{{asset ('public/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js')}}"></script>
-<!-- Summernote -->
-<script src="{{asset ('public/plugins/summernote/summernote-bs4.min.js')}}"></script>
-<!-- overlayScrollbars -->
-<script src="{{asset ('public/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
-<!-- AdminLTE App -->
-<script src="{{asset ('public/dashboard/js/adminlte.js')}}"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="{{asset ('public/dashboard/js/demo.js')}}"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{asset ('public/dashboard/js/pages/dashboard.js')}}"></script>
+<script src="{{asset ('public/dashboard/vendors/jqvmap/dist/jquery.vmap.js')}}"></script>
+<script src="{{asset ('public/dashboard/vendors/jqvmap/dist/maps/jquery.vmap.world.js')}}"></script>
+<script src="{{asset ('public/dashboard/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js')}}"></script>
+<!-- bootstrap-daterangepicker -->
+<script src="{{asset ('public/dashboard/vendors/moment/min/moment.min.js')}}"></script>
+<script src="{{asset ('public/dashboard/vendors/bootstrap-daterangepicker/daterangepicker.js')}}"></script>
+
+<!-- Custom Theme Scripts -->
+<script src="{{asset ('public/dashboard/build/js/custom.min.js')}}"></script>
