@@ -54,10 +54,13 @@
 										Login
 									</button>
 								</div>
-								<div class="mt-4 text-center">
-									Don't have an account? <a href="/adminpannel/register.html">Create One</a>
-								</div>
+								
 							</form>
+
+
+							<div class="mt-4 text-center">
+								Don't have an account? <a href="/adminpannel/register.html">Create One</a>
+							</div>
 						</div>
 					</div>
 					<div class="footer">

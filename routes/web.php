@@ -20,9 +20,14 @@ Route::get('/', function () {
 Route::prefix('/admin')->group(function (){
     // Route::get('/login', [App\Http\Controllers\AdminLoginController::class, 'adminlogin'])->name('adminLogin');
     Route::match(['get','post'], '/login', 'AdminLoginController@adminLogin')->name('adminLogin');
-  // Route::group(['middleware'=>['admin']],function (){
-   //Route::get('/dashboard', [App\Http\Controllers\AdminLoginController::class, 'dashboard'])->name('adminDashboard');
+    Route::group(['middleware'=>['admin']],function (){
+    Route::get('/dashboard', [App\Http\Controllers\AdminLoginController::class, 'dashboard'])->name('adminDashboard');
+    //Admin Profile
+    Route::get('/profile', 'AdminProfileController@profile')->name('profile');
+    //Admin Update
+    Route::post('/profile/update/{id}', 'AdminProfileController@updateProfile')->name('updateProfile');
     });
     
-//});
-Route::get('/admin/dashboard', [App\Http\Controllers\AdminLoginController::class, 'dashboard'])->name('adminDashboard');
+});
+
+Route::get('/admin/logout', 'AdminLoginController@adminLogout')->name('adminLogout');
